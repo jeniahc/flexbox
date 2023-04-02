@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Untitled Document</title>
+	<style>
+		* {
+			box-sizing: border-box;
+		}
+.flex-container {
+    display: flex;
+    background-color: paleturquoise;
+}
+.flex-container > div {
+    background-color: #fff;
+    margin: 10px;
+    padding: 10px;
+    font-size: 20px;
+}
+.stack > div {
+    flex-direction: column;
+    padding: 20px;
+}
+#container {
+    width: 800px;
+    margin: 0 auto;
+}
+.section_L {
+    flex-grow: 3;
+}
+	.ui-tabs .ui-tabs-nav {
+		font-size: 10px;
+	}
+.section_R {
+    flex-grow: 2;
+}
+		
+		@media (max-width: 800px) {
+  .flex-container {
+    flex-direction: column;
+  }
+}
+		
+	</style>
+	<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( ".widget input[type=submit], .widget a, .widget button" ).button();
+    $( "button, input, a" ).on( "click", function( event ) {
+      event.preventDefault();
+    } );
+  } );
+  </script>
+</head>
+	
+<body>
+<div id="container">
+<h1>Creating a Flex Container</h1>
+<div class="flex-container">
+<h3>
+	1.
+	</h3>
+  <div>ghghghghg</div>
+  <div>gnfjdkdddkd</div>
+  <div>fkdkdnjfkffjf</div> 
+	<h3>
+	2.
+	</h3>
+	<div>vsykjznihvf</div>
+	<div>sijnijdvnij</div>
+	<div>fhbjkc</div>
+</div>
+<div class="flex-container">
+	<h3>
+	3.
+	</h3>
+	<div class="section_L">vnvsknsvjsj</div>
+    <div class="stack section_R">
+      <div>hdjjcj</div>
+      <div>hainsnuv</div>
+    </div>
+	<div>fhgj</div>
+	<div>fvk</div>
+	<div>vknvsk</div>
+</div>
+	<div class="widget">
+  <h1>JQueryUI Buttons</h1>
+  <button>A button element</button>
+  <input type="submit" value="A submit button">
+</div>
+	</div>
+	
+</body>
+	
+</html>
